@@ -33,8 +33,8 @@ namespace MOD6_1302223071
                         }
                         this.title = title;
                         Random rand = new Random();
-                        int minRand = 100000;
-                        int maxRand = 999999;
+                        int minRand = 10000;
+                        int maxRand = 99999;
                         this.id = rand.Next(minRand, maxRand + 1);
                         this.playCount = 0;
                     }
@@ -93,24 +93,8 @@ namespace MOD6_1302223071
                 sayaTubeVideo.PrintVideoDetails();
                 Console.Read();
 
-                /* try
-                {
-                    SayaTubeVideo errTest = new SayaTubeVideo(vid1);
-                    sayaTubeVideo.IncreasePlayCount(rand.Next(min + 10000000, max + 10000000));
-                }
-                catch (ArgumentException ex)
-                {
-                    Console.WriteLine($"Error : {ex.Message}");
-                    sayaTubeVideo.PrintVideoDetails();
-                    Console.Read();
-                }
-                catch (OverflowException ex)
-                {
-                    Console.WriteLine($"Error : {ex.Message}");
-                    sayaTubeVideo.PrintVideoDetails();
-                    Console.Read();
-                }*/
-                Console.Read();
+                
+               
 
             }
         }
