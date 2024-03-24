@@ -91,10 +91,26 @@ namespace MOD6_1302223071
                 int max = 10000000;
                 sayaTubeVideo.IncreasePlayCount(rand.Next(min, max + 1));
                 sayaTubeVideo.PrintVideoDetails();
-                Console.Read();
-
                 
-               
+
+                /*try
+                {
+                    SayaTubeVideo errTest = new SayaTubeVideo(vid1);
+                    sayaTubeVideo.IncreasePlayCount(rand.Next(min + 10000000, max + 10000000));
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine($"Error : {ex.Message}");
+                    sayaTubeVideo.PrintVideoDetails();
+                    Console.Read();
+                }
+                catch (OverflowException ex)
+                {
+                    Console.WriteLine($"Error : {ex.Message}");
+                    sayaTubeVideo.PrintVideoDetails();
+                    Console.Read();
+                }*/
+                Console.Read();
 
             }
         }
